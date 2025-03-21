@@ -1,9 +1,3 @@
-#define LED_BT 2
-#define sensorPinThumb 33
-#define sensorPinMiddle 39
-#define calibrationTime 5000
-
-
 struct SensorCalibration {
   int minVal;
   int maxVal;
@@ -12,15 +6,6 @@ struct SensorCalibration {
 SensorCalibration thumbCal = { 4095, 0 };
 SensorCalibration middleCal = { 4095, 0 };
 
-
-void blinkLED(int times, int delayMs) {
-  for (int i = 0; i < times; i++) {
-    digitalWrite(LED_BT, HIGH);
-    delay(delayMs);
-    digitalWrite(LED_BT, LOW);
-    delay(delayMs);
-  }
-}
 
 void pulseLED(int duration, int steps) {
   int delayTime = duration / (steps * 2);
@@ -68,10 +53,8 @@ void calibrateSensors() {
     int thumbVal = analogRead(sensorPinThumb);
     int middleVal = analogRead(sensorPinMiddle);
 
-
     thumbCal.maxVal = max(thumbCal.maxVal, thumbVal);
     middleCal.maxVal = max(middleCal.maxVal, middleVal);
-
 
     pulseLED(250, 50);
   }

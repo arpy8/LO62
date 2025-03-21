@@ -10,6 +10,7 @@ import Throttle from '@/components/Throttle';
 import { Snackbar } from '@/components/Snackbar';
 import { sendCommand } from '@/utils/bluetooth';
 import { useVibration } from '@/utils/haptics';
+
 import { EmergencyButton } from '@/components/EmergencyButton';
 import { TouchableButton, GearView } from '@/components/IndexComponents';
 import commandMap from '@/constants/commandMap';
@@ -354,7 +355,7 @@ export default function HomePage() {
 
       <View style={styles.rowContainer}>
         <TouchableButton
-          fontSize={15}
+          fontSize={24}
           primaryColor="#72D82D"
           secondaryColor="#FFFFFF"
           text="Accelerate"
@@ -362,17 +363,17 @@ export default function HomePage() {
           onPress={() => handleSpeed('accelerate')}
           disabled={!engineOn}
         />
-        <TouchableButton
+        {/* <TouchableButton
           fontSize={15}
           primaryColor="#ffd65a"
           secondaryColor="#FFFFFF"
           text="Hold"
           icon="pause"
-          // onPress={() => handleSpeed('accelerate')}
+          // onPress={() => {}}
           disabled={!engineOn}
-        />
+        /> */}
         <TouchableButton
-          fontSize={15}
+          fontSize={24}
           primaryColor="#FA3636"
           secondaryColor="#FFFFFF"
           text="Decelerate"

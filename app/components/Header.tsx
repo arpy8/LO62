@@ -9,7 +9,7 @@ import {
 import { Snackbar } from '@/components/Snackbar';
 import { BleManager } from 'react-native-ble-plx';
 import { sendCommand, setupBluetooth } from '@/utils/bluetooth';
-import { setupAudio, loadSound, playSound, unloadAllSounds } from '@/utils/sound';
+// import { setupAudio, loadSound, playSound, unloadAllSounds } from '@/utils/sound';
 import commandMap from '@/constants/commandMap';
 
 
@@ -35,16 +35,9 @@ interface HeaderProps {
 
 export default function Header({ sliderValue, primaryColorBT, secondaryColorBT, primaryColorLT, secondaryColorLT, manager, isScanning, device, snackbar, setDevice, setIsScanning, vibrate, hideSnackbar, showSnackbar, setLightOn, lightOn }: HeaderProps) {
     useEffect(() => {
-        async function initialize() {
-            await setupAudio();
-            await loadSound('bluetooth', require('../assets/audio/bt.mp3'));
-        }
-
-        initialize();
         setupBluetooth();
 
         return () => {
-            unloadAllSounds();
             if (isScanning) {
                 manager.stopDeviceScan();
             }
@@ -113,7 +106,7 @@ export default function Header({ sliderValue, primaryColorBT, secondaryColorBT, 
                             setDevice(device);
                             vibrate(300, 'soft');
                             console.log('Connected to ESP32');
-                            playSound('bluetooth');
+                            // playSound('bluetooth');
                             showSnackbar('Connected to ESP32', 'success');
                         })
                         .catch((error) => {

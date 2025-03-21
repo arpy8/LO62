@@ -2,11 +2,6 @@
 #include <BLEUtils.h>
 #include <BLEClient.h>
 
-#define LED_BUILTIN 15
-#define SERVICE_UUID "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
-#define CHAR_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
-
-
 static BLEUUID serviceUUID(SERVICE_UUID);
 static BLEUUID charUUID(CHAR_UUID);
 
@@ -85,8 +80,8 @@ bool connectToServer() {
 void sendCommand(uint8_t command) {
   if (connected && pRemoteCharacteristic != nullptr) {
     pRemoteCharacteristic->writeValue(&command, 1);
-    // Serial.print("Sent command: 0x");
-    // Serial.println(command, HEX);
+    Serial.print("Sent command: 0x");
+    Serial.println(command, HEX);
   } else {
     Serial.println("Not connected to server");
   }
