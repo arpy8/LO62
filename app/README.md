@@ -1,6 +1,6 @@
 # LO62 Controller Mobile App
 
-This directory contains the source code for **LO62 Controller** built using React Native. The app connects with the onboard ESP32 device via Bluetooth Low Energy (BLE).
+This directory contains the source code for **LO62 Controller** built using React Native. The app connects with the onboard ESP32 via BLE.
 
 ## Screenshots
 
@@ -8,5 +8,3 @@ This directory contains the source code for **LO62 Controller** built using Reac
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 
 ---
-
-
