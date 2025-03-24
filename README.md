@@ -1,7 +1,7 @@
 # LO62
 
 ![image](https://github.com/user-attachments/assets/2a3e6b98-7d28-4349-814b-14805d85d352)
-[![Medium](https://img.shields.io/badge/Medium_Article-12100E?style=for-the-badge&logo=medium&logoColor=white)]()
+[![Medium](https://img.shields.io/badge/Medium_Article-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://arpy8.medium.com/i-just-turned-my-waveboard-electric-9de75e430375)
 
 ### **Project Overview**  
 LO62 is my electric ripstick project that I've been planning to build for almost 2 years now. I am using an ESP32 to control the BLDC motor and a timing belt mechanism. I also developed a mobile app using react native which you can find inside the [app](./app) directory for contrlling the motor's speed in various ways.
@@ -12,7 +12,7 @@ I had planned to control the motor using a hand controller made from flex sensor
 
 All source files, firmware and CAD designs are available in this repository. Acha, I also wrote a medium article sharing my journey so you can check that out as well. Alright bye.
 
-[![Medium](https://img.shields.io/badge/Medium_Article-12100E?style=for-the-badge&logo=medium&logoColor=white)]()
+[![Medium](https://img.shields.io/badge/Medium_Article-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://arpy8.medium.com/i-just-turned-my-waveboard-electric-9de75e430375)
 
 ## Materials Used
 | Product        | Link |
