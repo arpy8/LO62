@@ -23,7 +23,7 @@ All source files, firmware and CAD designs are available in this repository. Alr
 | ESP32        | [ESP-WROOM-32 WiFi Bluetooth Development Board](https://robu.in/product/esp-wroom-32-wifi-bluetooth-networking-smart-component-development-board/) |
 
 ### **Diagram** 
-![image](https://github.com/user-attachments/assets/19743fbb-09a6-4a43-8919-20de5db536ae)
+![image](https://github.com/user-attachments/assets/f36df22a-ea9b-47e5-a3c2-ad94c616f5a0)
 
 ### **Software & Firmware**  
 - [Client Side Mobile App](./app)  
