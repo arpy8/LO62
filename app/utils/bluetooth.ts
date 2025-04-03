@@ -2,8 +2,8 @@ import * as ExpoDevice from 'expo-device';
 import { Platform, PermissionsAndroid } from 'react-native';
 
 
-const SERVICE_UUID = "4fafc201-1fb5-459e-8fcc-c5c9c331914b";
-const CHARACTERISTIC_UUID = "beb5483e-36e1-4688-b7f5-ea07361b26a8";
+const SERVICE_UUID = "";
+const CHARACTERISTIC_UUID = "";
 
 export const setupBluetooth = async () => {
     if (Platform.OS === "android") {
