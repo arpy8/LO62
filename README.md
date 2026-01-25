@@ -2,6 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/2a3e6b98-7d28-4349-814b-14805d85d352)
 
+# [Project Reel](https://www.instagram.com/p/DTc_H6qkeNk/)
+
 ### **Project Overview**  
 LO62 is my electric ripstick project that I've been planning to build for almost 2 years now. I am using an ESP32 to control the BLDC motor with a timing belt mechanism. I also developed a mobile app using react native which you can find inside the [app](./app) directory for controlling the motor's speed in various ways.
 
